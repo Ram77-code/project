@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <%-include("partials/header.ejs") %>
+        <div class="container">
+            <h1><em>Ai-images</em></h1>
+            <p>Search from list only.</p>
+            <ul>
+
+                <li>Nature</li>
+                <li>Lake</li>
+                <li>Animals</li>
+                <li>Divine</li>
+                <li>Shiv</li>
+                <li>Ram</li>
+            </ul>
+            <form action="/submit" method="POST">
+                <input type="text" name="fName" placeholder="Search">
+                <input type="submit" value="OK">
+            </form>
+
+        </div>
+        <%-include("partials/footer.ejs") %>
+
+
+            <style>
+                .container {
+                    text-align: center;
+                    margin-top: 25px;
+                    font-family: Arial, sans-serif;
+
+                    padding: 10px;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                }
+            </style>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
